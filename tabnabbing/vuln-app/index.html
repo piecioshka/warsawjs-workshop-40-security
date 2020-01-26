@@ -1,0 +1,18 @@
+<h1>Homepage (Vuln app)</h1>
+
+<a
+    href="../attacker-app-1/index.html"
+    target="_blank"
+    rel="noopener noreferrer"
+>Kittens</a>
+
+<button id="pup">Puppies</button>
+<script>
+    pup.addEventListener('click', () => {
+        window.open(
+            '../attacker-app-1/index.html',
+            '_blank',
+            'noopener=1,noreferrer=1'
+        )
+    });
+</script>
