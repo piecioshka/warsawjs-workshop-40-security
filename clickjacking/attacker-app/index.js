@@ -1,6 +1,10 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 
-app.use(express.static('.'));
+app.use(express.static("static/"));
 
-app.listen(7001);
+const PORT = 7001;
+
+app.listen(PORT, () => {
+  console.log(`listening on http://localhost:${PORT}`);
+});

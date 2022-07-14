@@ -1,0 +1,23 @@
+<h1>Homepage (Vuln app)</h1>
+
+<ul></ul>
+
+<form>
+    <textarea id="comment" cols="70" rows="4"></textarea>
+    <br/>
+    <button type="submit">Add Comment</button>
+</for>
+
+<br/>
+<br/>
+
+<fieldset style="display: inline-block;">
+    <p>Try add comment like that</p>
+    <textarea style="white-space: pre-line;" cols="66" rows="4" disabled>
+        This a regular text...
+        &lt;script src="http://localhost:7001/ups.js">&lt;/script>
+        ...but inside there is a devil!
+    </textarea>
+</fieldset>
+
+<script src="main.js"></script>

@@ -1,11 +1,17 @@
-const express = require('express');
+const fs = require('fs');
+const express = require("express");
 const app = express();
 
-app.use(express.static('.'));
+app.use(express.static("static/"));
 
-// app.get('download', (req, res) => {
-//     const page = req.params.page;
-//     res.end();
-// })
+app.get("/download", (req, res) => {
+  const page = req.query?.page;
+  const content = fs.readFileSync(`./static/pages/${page}`);
+  res.end(content);
+});
 
-app.listen(7000);
+const PORT = 7000;
+
+app.listen(PORT, () => {
+  console.log(`listening on http://localhost:${PORT}`);
+});
