@@ -11,6 +11,6 @@
   "author": "Piotr Kowalski <piecioshka@gmail.com> (https://piecioshka.pl)",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.1"
   }
 }

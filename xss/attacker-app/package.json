@@ -8,9 +8,8 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
-        "express": "^4.17.1"
+        "express": "^4.18.1"
     },
-    "devDependencies": {},
     "keywords": [],
     "author": "Piotr Kowalski <piecioshka@gmail.com> (https://piecioshka.pl)",
     "license": "MIT"
