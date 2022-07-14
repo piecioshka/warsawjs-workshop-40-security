@@ -6,5 +6,5 @@ app.use(express.static("static/"));
 const PORT = 7001;
 
 app.listen(PORT, () => {
-  console.log(`listening on http://localhost:${PORT}`);
+  console.log(`Server was started at http://localhost:${PORT}`);
 });
